@@ -1,0 +1,26 @@
+ 
+
+
+const humid = msg.payload.humid;
+const tempc = msg.payload.tempc;
+ 
+const d = new Date();
+const timerecord =  d.toString()
+const jsonPayload = {
+    "tempc":tempc,
+    "humid":humid,
+    "timerecord":timerecord
+};
+
+msg.payload = jsonPayload;
+return msg;
+
+
+ 
+
+ 
+
+
+
+
+
