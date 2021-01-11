@@ -79,9 +79,9 @@
 
     return msg;
 
-## ตอนที่ 8 ตอนที่ 11 node-red ดึงข้อมูลจาก MongoDB on Cloud && MongoDB Atlas
+## ตอนที่ 8 ใช้ Node-Red เเสดงข้อมูลจาก DHT11 ที่บันทึกลง MongoDB
 
-# 1. Source code ของ Node Dashboard template ui ที่ใช้เเสดงข้อมูลจาก MongoDB Atlas ที่อยู่บน Cloud
+# 1. Source code ที่ใช้เเสดงข้อมูล DHT11 ของ Node Dashboard template ui
 
     <!DOCTYPE html>
     <html lang="en">
@@ -119,9 +119,9 @@
     </body>
     </html>
 
-## sdf
+## ตอนที่ 11 node-red ดึงข้อมูลจาก MongoDB on Cloud && MongoDB Atlas
 
-# 1.
+# 1. Source code ของ Node Dashboard template ui ที่ใช้เเสดงข้อมูลจาก MongoDB Atlas ที่อยู่บน Cloud
 
     <!DOCTYPE html>
     <html lang="en">
