@@ -58,3 +58,23 @@
     msg.payload = obj;
 
     return msg;
+
+## ตอนที่ 7 นำข้อมูลจาก DHT11 มาบันทึกที่ฐานข้อมูล MongoDB
+
+# 1. function การเเปลงข้อมูลจาก dht11 เป็น object เพื่อบันทึกลง MongoDB
+
+    const humid = msg.payload.humid;
+    const tempc = msg.payload.tempc;
+
+    const d = new Date();
+    const timerecord =  d.toString();
+
+    const jsonPayload = {
+        "tempc":tempc,
+        "humid":humid,
+        "timerecord":timerecord
+    };
+
+    msg.payload = jsonPayload;
+
+    return msg;
