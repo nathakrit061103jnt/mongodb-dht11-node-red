@@ -1,0 +1,13 @@
+//function convertObjFucn ที่ใช้ convert ข้อมูลเป็น Json
+
+    const data1 = msg.payload;
+    const key2 = msg.key2;
+
+    const obj = {
+        "data": data1,
+        "key2": key2
+    }
+
+    msg.payload = obj;
+
+    return msg;
