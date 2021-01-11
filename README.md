@@ -6,7 +6,7 @@
        <li ng-repeat="item in msg.payload">{{item.name}}</li>
     </ul>
 
-# 2.
+# 2. Show Data table view
 
     <!DOCTYPE html>
     <html lang="en">
@@ -42,3 +42,19 @@
 
         </body>
     </html>
+
+## ตอนที่ 6 นำข้อมูลจากNode Red บันทึกลงฐานข้อมูล MongDB บน localhost
+
+# 1. function convertObjFucn ที่ใช้ convert ข้อมูลเป็น Json
+
+    const data1 = msg.payload;
+    const key2 = msg.key2;
+
+    const obj = {
+        "data": data1,
+        "key2": key2
+    }
+
+    msg.payload = obj;
+
+    return msg;
