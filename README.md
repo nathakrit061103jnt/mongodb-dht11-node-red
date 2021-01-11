@@ -201,9 +201,11 @@
     2. pm2 start /usr/bin/node-red -- -v
     3. pm2 startup systemd
 
-==================exmaple========================================
+##### exmaple ===========
+
 sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
-==================exmaple========================================
+
+##### exmaple ====================
 
     4.export PM2_HOME="/root/.pm2"
     5. pm2 save
