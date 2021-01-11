@@ -201,7 +201,7 @@
     2. pm2 start /usr/bin/node-red -- -v
     3. pm2 startup systemd
 
-##### exmaple อันนี้เป็นตัวอย่างของผม ให้เพื่อเพื่อ ๆ เปลี่ยนเป็น path ของตัวเองด้วยนะครับ ==========
+##### exmaple อันนี้เป็นตัวอย่างของผม ให้เพื่อเพื่อน ๆ เปลี่ยนเป็น path ของตัวเองด้วยนะครับ ==========
 
     sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
 
