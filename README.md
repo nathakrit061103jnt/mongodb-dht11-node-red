@@ -79,9 +79,9 @@
 
     return msg;
 
-## ตอนที่ 8 ใช้ Node-Red เเสดงข้อมูลจาก DHT11 ที่บันทึกลง MongoDB
+## ตอนที่ 8 ตอนที่ 11 node-red ดึงข้อมูลจาก MongoDB on Cloud && MongoDB Atlas
 
-# 1. Source code ที่ใช้เเสดงข้อมูล DHT11 ของ Node Dashboard template ui
+# 1. Source code ของ Node Dashboard template ui ที่ใช้เเสดงข้อมูลจาก MongoDB Atlas ที่อยู่บน Cloud
 
     <!DOCTYPE html>
     <html lang="en">
@@ -111,6 +111,45 @@
                 <td>{{item.humid}}</td>
                 <td>{{item.tempc}}</td>
                 <td>{{item.timerecord}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </body>
+    </html>
+
+## sdf
+
+# 1.
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </head>
+    <body>
+
+    <div class="container">
+        <h2>DHT11 Data On Cloud</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>id</th>
+                <th>name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in msg.payload">
+                <td>{{$index + 1}}</td>
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
             </tr>
             </tbody>
         </table>
