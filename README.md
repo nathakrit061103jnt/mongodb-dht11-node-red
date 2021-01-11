@@ -371,5 +371,5 @@
 
 ### install mqtt Broker on Ubuntu
 
-1.  sudo apt-get install mosquitto
-2.  sudo apt-get update
+    1.  sudo apt-get install mosquitto
+    2.  sudo apt-get update
